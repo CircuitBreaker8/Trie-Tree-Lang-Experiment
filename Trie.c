@@ -8,7 +8,7 @@
 #define ARRAY_SIZE(a) sizeof(a)/sizeof(a[0]) 
   
 // Alphabet size (# of symbols) 
-#define ALPHABET_SIZE (26) 
+#define ALPHABET_SIZE (40) 
   
 // Converts key current character into index 
 // use only 'a' through 'z' and lower case 
@@ -91,10 +91,14 @@ bool search(struct TrieNode *root, const char *key)
 // Driver 
 int main() 
 { 
+    /*
     // Input keys (use only 'a' through 'z' and lower case) 
     char keys[][8] = {"the", "a", "there", "answer", "any", 
                      "by", "bye", "their"}; 
   
+
+    */       // We want to fill keys with the words in the list
+
     char output[][32] = {"Not present in trie", "Present in trie"}; 
   
   
